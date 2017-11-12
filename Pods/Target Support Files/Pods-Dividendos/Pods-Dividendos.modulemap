@@ -1,0 +1,6 @@
+framework module Pods_Dividendos {
+  umbrella header "Pods-Dividendos-umbrella.h"
+
+  export *
+  module * { export * }
+}

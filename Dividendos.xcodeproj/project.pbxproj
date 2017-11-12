@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38A47167EE067E7319B9B205 /* Pods_Dividendos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB937E2DB423239310822BA3 /* Pods_Dividendos.framework */; };
+		A50E29FD1D90BF2900D64E22 /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50E29FC1D90BF2900D64E22 /* ServiceError.swift */; };
+		A5156EEE1D24A37100D0C8C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5156EED1D24A37100D0C8C6 /* Constants.swift */; };
+		A5156EF41D24B37200D0C8C6 /* CompaniesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5156EF31D24B37200D0C8C6 /* CompaniesViewController.swift */; };
+		A51736321D4D00CE00045D73 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51736311D4D00CE00045D73 /* CompanyViewController.swift */; };
+		A52918A31DFDF5C5002EB366 /* CompanyNoticeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52918A21DFDF5C5002EB366 /* CompanyNoticeService.swift */; };
+		A52E12041D907E60003D775F /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E12031D907E60003D775F /* BaseTableViewController.swift */; };
+		A52E12061D908078003D775F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E12051D908078003D775F /* BaseViewController.swift */; };
+		A52E12091D908B14003D775F /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E12081D908B14003D775F /* APIResult.swift */; };
+		A52E120B1D908B85003D775F /* AlamofireExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E120A1D908B85003D775F /* AlamofireExtensions.swift */; };
+		A52E120F1D908BF0003D775F /* ParameterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E120E1D908BF0003D775F /* ParameterProtocol.swift */; };
+		A52E12131D908C35003D775F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E12121D908C35003D775F /* APIService.swift */; };
+		A52E12151D908CAE003D775F /* PusharpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E12141D908CAE003D775F /* PusharpService.swift */; };
+		A52E12191D908E7D003D775F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E12181D908E7D003D775F /* User.swift */; };
+		A52E92CC1D456EC2006DA89B /* DividendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52E92CB1D456EC2006DA89B /* DividendTableViewCell.swift */; };
+		A52E92CF1D456F19006DA89B /* DividendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A52E92CE1D456F19006DA89B /* DividendTableViewCell.xib */; };
+		A5519CC71E226F0700652FFF /* InAppPurchaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5519CC61E226F0700652FFF /* InAppPurchaseCell.xib */; };
+		A5519CC91E226F2D00652FFF /* InAppPurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5519CC81E226F2D00652FFF /* InAppPurchaseCell.swift */; };
+		A5659F8C1D4BF44D00E554FF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5659F8B1D4BF44D00E554FF /* SessionManager.swift */; };
+		A56938C91DB43265001B5D2B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56938C81DB43265001B5D2B /* CloudKit.framework */; };
+		A56938CB1DB434D9001B5D2B /* FavoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56938CA1DB434D9001B5D2B /* FavoritesService.swift */; };
+		A578CE931D22FD940020A2D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578CE921D22FD940020A2D4 /* AppDelegate.swift */; };
+		A578CE951D22FD940020A2D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578CE941D22FD940020A2D4 /* HomeViewController.swift */; };
+		A578CE971D22FD940020A2D4 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A578CE961D22FD940020A2D4 /* NewsViewController.swift */; };
+		A578CE9A1D22FD940020A2D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A578CE981D22FD940020A2D4 /* Main.storyboard */; };
+		A578CE9C1D22FD940020A2D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A578CE9B1D22FD940020A2D4 /* Assets.xcassets */; };
+		A578CE9F1D22FD940020A2D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A578CE9D1D22FD940020A2D4 /* LaunchScreen.storyboard */; };
+		A5830A821DA31CEE006BDB72 /* DividendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5830A811DA31CEE006BDB72 /* DividendDetailViewController.swift */; };
+		A58C8A451D4A31EE00282A91 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C8A441D4A31EE00282A91 /* NotificationManager.swift */; };
+		A58C8A471D4A36E900282A91 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58C8A461D4A36E900282A91 /* AccountViewController.swift */; };
+		A5AA67C91D95D98A00381414 /* CompanyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA67C81D95D98A00381414 /* CompanyService.swift */; };
+		A5AA67CB1D95D9D300381414 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA67CA1D95D9D300381414 /* Company.swift */; };
+		A5AA67CD1D95E86B00381414 /* RegisterUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA67CC1D95E86B00381414 /* RegisterUserModel.swift */; };
+		A5AA67D11D95F35800381414 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5AA67D01D95F35800381414 /* SwiftNotice.swift */; };
+		A5BF84D91D91FCCB009F9408 /* Dividend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF84D81D91FCCB009F9408 /* Dividend.swift */; };
+		A5BF84DB1D920126009F9408 /* DividendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF84DA1D920126009F9408 /* DividendService.swift */; };
+		A5BF84DD1D9204E5009F9408 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF84DC1D9204E5009F9408 /* Token.swift */; };
+		A5BF84DF1D92190E009F9408 /* DateHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF84DE1D92190E009F9408 /* DateHelpers.swift */; };
+		A5BF84E11D921C95009F9408 /* ServiceErrorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF84E01D921C95009F9408 /* ServiceErrorEnum.swift */; };
+		A5BF84E51D921CAC009F9408 /* DividendType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BF84E41D921CAC009F9408 /* DividendType.swift */; };
+		A5C3D5801D384B1800FFD836 /* DividendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C3D57F1D384B1800FFD836 /* DividendModel.swift */; };
+		A5C45A571E214AF2006E29D5 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C45A561E214AF2006E29D5 /* TabBarController.swift */; };
+		A5C689691DF76E8C0047608A /* Favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C689681DF76E8C0047608A /* Favorite.swift */; };
+		A5DDF0FB1DAE941900F67442 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DDF0FA1DAE941900F67442 /* StoreKit.framework */; };
+		A5DDF0FE1DAE960B00F67442 /* DividendsProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF0FD1DAE960B00F67442 /* DividendsProducts.swift */; };
+		A5DDF1001DAE971F00F67442 /* InAppPurchasesHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF0FF1DAE971F00F67442 /* InAppPurchasesHelper.swift */; };
+		A5EDD0E81E228BEE0073C4BA /* GoogleAnalyticsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5EDD0E71E228BEE0073C4BA /* GoogleAnalyticsExtension.swift */; };
+		A5EDD0EA1E228E610073C4BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5EDD0E91E228E610073C4BA /* GoogleService-Info.plist */; };
+		A5FCCACB1DFDE33A000D62A9 /* CompanyNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FCCACA1DFDE33A000D62A9 /* CompanyNotice.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FC5811DE0290BA2FAE277A9 /* Pods-Dividendos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dividendos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Dividendos/Pods-Dividendos.release.xcconfig"; sourceTree = "<group>"; };
+		3B120902179E388CFDDA4DE1 /* Pods-Dividendos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dividendos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Dividendos/Pods-Dividendos.debug.xcconfig"; sourceTree = "<group>"; };
+		A50E29FC1D90BF2900D64E22 /* ServiceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		A5156EED1D24A37100D0C8C6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A5156EF31D24B37200D0C8C6 /* CompaniesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesViewController.swift; sourceTree = "<group>"; };
+		A51736311D4D00CE00045D73 /* CompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		A52918A21DFDF5C5002EB366 /* CompanyNoticeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyNoticeService.swift; sourceTree = "<group>"; };
+		A52E12031D907E60003D775F /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		A52E12051D908078003D775F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		A52E12081D908B14003D775F /* APIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		A52E120A1D908B85003D775F /* AlamofireExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireExtensions.swift; sourceTree = "<group>"; };
+		A52E120E1D908BF0003D775F /* ParameterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterProtocol.swift; sourceTree = "<group>"; };
+		A52E12121D908C35003D775F /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A52E12141D908CAE003D775F /* PusharpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PusharpService.swift; sourceTree = "<group>"; };
+		A52E12181D908E7D003D775F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A52E92CB1D456EC2006DA89B /* DividendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendTableViewCell.swift; sourceTree = "<group>"; };
+		A52E92CE1D456F19006DA89B /* DividendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DividendTableViewCell.xib; sourceTree = "<group>"; };
+		A5519CC61E226F0700652FFF /* InAppPurchaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InAppPurchaseCell.xib; sourceTree = "<group>"; };
+		A5519CC81E226F2D00652FFF /* InAppPurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchaseCell.swift; sourceTree = "<group>"; };
+		A5659F8B1D4BF44D00E554FF /* SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		A56938C81DB43265001B5D2B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		A56938CA1DB434D9001B5D2B /* FavoritesService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesService.swift; sourceTree = "<group>"; };
+		A578CE8F1D22FD940020A2D4 /* Dividendos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dividendos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A578CE921D22FD940020A2D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A578CE941D22FD940020A2D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A578CE961D22FD940020A2D4 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A578CE991D22FD940020A2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A578CE9B1D22FD940020A2D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A578CE9E1D22FD940020A2D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A578CEA01D22FD940020A2D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5830A801DA2F949006BDB72 /* Dividendos.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Dividendos.entitlements; sourceTree = "<group>"; };
+		A5830A811DA31CEE006BDB72 /* DividendDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendDetailViewController.swift; sourceTree = "<group>"; };
+		A58C8A441D4A31EE00282A91 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A58C8A461D4A36E900282A91 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		A5AA67C81D95D98A00381414 /* CompanyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyService.swift; sourceTree = "<group>"; };
+		A5AA67CA1D95D9D300381414 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		A5AA67CC1D95E86B00381414 /* RegisterUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterUserModel.swift; sourceTree = "<group>"; };
+		A5AA67D01D95F35800381414 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
+		A5BF84D81D91FCCB009F9408 /* Dividend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dividend.swift; sourceTree = "<group>"; };
+		A5BF84DA1D920126009F9408 /* DividendService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendService.swift; sourceTree = "<group>"; };
+		A5BF84DC1D9204E5009F9408 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		A5BF84DE1D92190E009F9408 /* DateHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelpers.swift; sourceTree = "<group>"; };
+		A5BF84E01D921C95009F9408 /* ServiceErrorEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceErrorEnum.swift; sourceTree = "<group>"; };
+		A5BF84E41D921CAC009F9408 /* DividendType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendType.swift; sourceTree = "<group>"; };
+		A5C3D57F1D384B1800FFD836 /* DividendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendModel.swift; sourceTree = "<group>"; };
+		A5C45A561E214AF2006E29D5 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A5C689681DF76E8C0047608A /* Favorite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Favorite.swift; sourceTree = "<group>"; };
+		A5DDF0FA1DAE941900F67442 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		A5DDF0FD1DAE960B00F67442 /* DividendsProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DividendsProducts.swift; sourceTree = "<group>"; };
+		A5DDF0FF1DAE971F00F67442 /* InAppPurchasesHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchasesHelper.swift; sourceTree = "<group>"; };
+		A5EDD0E41E228B7D0073C4BA /* Dividendos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dividendos-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5EDD0E71E228BEE0073C4BA /* GoogleAnalyticsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleAnalyticsExtension.swift; sourceTree = "<group>"; };
+		A5EDD0E91E228E610073C4BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A5FCCACA1DFDE33A000D62A9 /* CompanyNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyNotice.swift; sourceTree = "<group>"; };
+		BB937E2DB423239310822BA3 /* Pods_Dividendos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dividendos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A578CE8C1D22FD940020A2D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A56938C91DB43265001B5D2B /* CloudKit.framework in Frameworks */,
+				38A47167EE067E7319B9B205 /* Pods_Dividendos.framework in Frameworks */,
+				A5DDF0FB1DAE941900F67442 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		664F4EB88E451BA44225AECF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A56938C81DB43265001B5D2B /* CloudKit.framework */,
+				A5DDF0FA1DAE941900F67442 /* StoreKit.framework */,
+				BB937E2DB423239310822BA3 /* Pods_Dividendos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A50E29FB1D90BEE800D64E22 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A52E12081D908B14003D775F /* APIResult.swift */,
+				A50E29FC1D90BF2900D64E22 /* ServiceError.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		A5156EEF1D24A37800D0C8C6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A5AA67D01D95F35800381414 /* SwiftNotice.swift */,
+				A5156EED1D24A37100D0C8C6 /* Constants.swift */,
+				A5EDD0E71E228BEE0073C4BA /* GoogleAnalyticsExtension.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A5156EF21D24AEA100D0C8C6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5C3D57F1D384B1800FFD836 /* DividendModel.swift */,
+				A5AA67CC1D95E86B00381414 /* RegisterUserModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		A52E12071D908AEE003D775F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A50E29FB1D90BEE800D64E22 /* Shared */,
+				A5AA67CA1D95D9D300381414 /* Company.swift */,
+				A5FCCACA1DFDE33A000D62A9 /* CompanyNotice.swift */,
+				A5BF84D81D91FCCB009F9408 /* Dividend.swift */,
+				A5BF84DC1D9204E5009F9408 /* Token.swift */,
+				A52E12181D908E7D003D775F /* User.swift */,
+				A5C689681DF76E8C0047608A /* Favorite.swift */,
+				A5BF84E31D921C9E009F9408 /* Enums */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		A52E120C1D908BCE003D775F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A52E120D1D908BD5003D775F /* Alamofire */,
+				A52E12101D908BFE003D775F /* Shared */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A52E120D1D908BD5003D775F /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				A52E120A1D908B85003D775F /* AlamofireExtensions.swift */,
+			);
+			name = Alamofire;
+			sourceTree = "<group>";
+		};
+		A52E12101D908BFE003D775F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A52E120E1D908BF0003D775F /* ParameterProtocol.swift */,
+				A5BF84DE1D92190E009F9408 /* DateHelpers.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		A52E12111D908C1E003D775F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A52E12121D908C35003D775F /* APIService.swift */,
+				A52E12141D908CAE003D775F /* PusharpService.swift */,
+				A5BF84DA1D920126009F9408 /* DividendService.swift */,
+				A5AA67C81D95D98A00381414 /* CompanyService.swift */,
+				A56938CA1DB434D9001B5D2B /* FavoritesService.swift */,
+				A52918A21DFDF5C5002EB366 /* CompanyNoticeService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		A52E92CD1D456EDF006DA89B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A52E92CB1D456EC2006DA89B /* DividendTableViewCell.swift */,
+				A52E92CE1D456F19006DA89B /* DividendTableViewCell.xib */,
+				A5519CC81E226F2D00652FFF /* InAppPurchaseCell.swift */,
+				A5519CC61E226F0700652FFF /* InAppPurchaseCell.xib */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		A572DC041D247E58002741F6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A58C8A461D4A36E900282A91 /* AccountViewController.swift */,
+				A5156EF31D24B37200D0C8C6 /* CompaniesViewController.swift */,
+				A51736311D4D00CE00045D73 /* CompanyViewController.swift */,
+				A5830A811DA31CEE006BDB72 /* DividendDetailViewController.swift */,
+				A578CE941D22FD940020A2D4 /* HomeViewController.swift */,
+				A578CE961D22FD940020A2D4 /* NewsViewController.swift */,
+				A5C45A561E214AF2006E29D5 /* TabBarController.swift */,
+				A572DC051D247E61002741F6 /* Abstract */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A572DC051D247E61002741F6 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				A52E12051D908078003D775F /* BaseViewController.swift */,
+				A52E12031D907E60003D775F /* BaseTableViewController.swift */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		A578CE861D22FD930020A2D4 = {
+			isa = PBXGroup;
+			children = (
+				A5EDD0E91E228E610073C4BA /* GoogleService-Info.plist */,
+				A578CE911D22FD940020A2D4 /* Dividendos */,
+				A578CE901D22FD940020A2D4 /* Products */,
+				CEBA5A3B555CA144B1203E6A /* Pods */,
+				664F4EB88E451BA44225AECF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A578CE901D22FD940020A2D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A578CE8F1D22FD940020A2D4 /* Dividendos.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A578CE911D22FD940020A2D4 /* Dividendos */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDF0FC1DAE95FB00F67442 /* Subscriptions */,
+				A5830A801DA2F949006BDB72 /* Dividendos.entitlements */,
+				A578CE921D22FD940020A2D4 /* AppDelegate.swift */,
+				A578CE9B1D22FD940020A2D4 /* Assets.xcassets */,
+				A578CEA01D22FD940020A2D4 /* Info.plist */,
+				A52E12071D908AEE003D775F /* Domain */,
+				A52E120C1D908BCE003D775F /* Helpers */,
+				A5156EF21D24AEA100D0C8C6 /* Models */,
+				A52E12111D908C1E003D775F /* Services */,
+				A58C8A431D4A31E000282A91 /* Singletons */,
+				A5A1DF171D248E1400D2BD14 /* Storyboards */,
+				A52E92CD1D456EDF006DA89B /* TableViewCells */,
+				A5156EEF1D24A37800D0C8C6 /* Utils */,
+				A572DC041D247E58002741F6 /* ViewControllers */,
+				A5EDD0E41E228B7D0073C4BA /* Dividendos-Bridging-Header.h */,
+			);
+			path = Dividendos;
+			sourceTree = "<group>";
+		};
+		A58C8A431D4A31E000282A91 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				A58C8A441D4A31EE00282A91 /* NotificationManager.swift */,
+				A5659F8B1D4BF44D00E554FF /* SessionManager.swift */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		A5A1DF171D248E1400D2BD14 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A578CE981D22FD940020A2D4 /* Main.storyboard */,
+				A578CE9D1D22FD940020A2D4 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		A5BF84E31D921C9E009F9408 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A5BF84E01D921C95009F9408 /* ServiceErrorEnum.swift */,
+				A5BF84E41D921CAC009F9408 /* DividendType.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		A5DDF0FC1DAE95FB00F67442 /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				A5DDF0FD1DAE960B00F67442 /* DividendsProducts.swift */,
+				A5DDF0FF1DAE971F00F67442 /* InAppPurchasesHelper.swift */,
+			);
+			name = Subscriptions;
+			sourceTree = "<group>";
+		};
+		CEBA5A3B555CA144B1203E6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B120902179E388CFDDA4DE1 /* Pods-Dividendos.debug.xcconfig */,
+				1FC5811DE0290BA2FAE277A9 /* Pods-Dividendos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A578CE8E1D22FD940020A2D4 /* Dividendos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A578CEA31D22FD940020A2D4 /* Build configuration list for PBXNativeTarget "Dividendos" */;
+			buildPhases = (
+				3363C8191349C64B8EDD25ED /* [CP] Check Pods Manifest.lock */,
+				A578CE8B1D22FD940020A2D4 /* Sources */,
+				A578CE8C1D22FD940020A2D4 /* Frameworks */,
+				A578CE8D1D22FD940020A2D4 /* Resources */,
+				1A968D73356EBE5FD69B9593 /* [CP] Embed Pods Frameworks */,
+				83F17987A5CC3A166313B08C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dividendos;
+			productName = Dividendos;
+			productReference = A578CE8F1D22FD940020A2D4 /* Dividendos.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A578CE871D22FD930020A2D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alliston Aleixo";
+				TargetAttributes = {
+					A578CE8E1D22FD940020A2D4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DLA5J5JEZ2;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A578CE8A1D22FD930020A2D4 /* Build configuration list for PBXProject "Dividendos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A578CE861D22FD930020A2D4;
+			productRefGroup = A578CE901D22FD940020A2D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A578CE8E1D22FD940020A2D4 /* Dividendos */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A578CE8D1D22FD940020A2D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52E92CF1D456F19006DA89B /* DividendTableViewCell.xib in Resources */,
+				A5519CC71E226F0700652FFF /* InAppPurchaseCell.xib in Resources */,
+				A578CE9F1D22FD940020A2D4 /* LaunchScreen.storyboard in Resources */,
+				A578CE9C1D22FD940020A2D4 /* Assets.xcassets in Resources */,
+				A578CE9A1D22FD940020A2D4 /* Main.storyboard in Resources */,
+				A5EDD0EA1E228E610073C4BA /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A968D73356EBE5FD69B9593 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dividendos/Pods-Dividendos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3363C8191349C64B8EDD25ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83F17987A5CC3A166313B08C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Dividendos/Pods-Dividendos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A578CE8B1D22FD940020A2D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A578CE971D22FD940020A2D4 /* NewsViewController.swift in Sources */,
+				A578CE931D22FD940020A2D4 /* AppDelegate.swift in Sources */,
+				A5519CC91E226F2D00652FFF /* InAppPurchaseCell.swift in Sources */,
+				A52E12041D907E60003D775F /* BaseTableViewController.swift in Sources */,
+				A52E12191D908E7D003D775F /* User.swift in Sources */,
+				A52E12091D908B14003D775F /* APIResult.swift in Sources */,
+				A52E12131D908C35003D775F /* APIService.swift in Sources */,
+				A52E120F1D908BF0003D775F /* ParameterProtocol.swift in Sources */,
+				A58C8A451D4A31EE00282A91 /* NotificationManager.swift in Sources */,
+				A5BF84DF1D92190E009F9408 /* DateHelpers.swift in Sources */,
+				A52E92CC1D456EC2006DA89B /* DividendTableViewCell.swift in Sources */,
+				A52E12061D908078003D775F /* BaseViewController.swift in Sources */,
+				A52918A31DFDF5C5002EB366 /* CompanyNoticeService.swift in Sources */,
+				A5BF84E11D921C95009F9408 /* ServiceErrorEnum.swift in Sources */,
+				A5EDD0E81E228BEE0073C4BA /* GoogleAnalyticsExtension.swift in Sources */,
+				A5DDF0FE1DAE960B00F67442 /* DividendsProducts.swift in Sources */,
+				A50E29FD1D90BF2900D64E22 /* ServiceError.swift in Sources */,
+				A5C3D5801D384B1800FFD836 /* DividendModel.swift in Sources */,
+				A5FCCACB1DFDE33A000D62A9 /* CompanyNotice.swift in Sources */,
+				A5C689691DF76E8C0047608A /* Favorite.swift in Sources */,
+				A5156EEE1D24A37100D0C8C6 /* Constants.swift in Sources */,
+				A5AA67D11D95F35800381414 /* SwiftNotice.swift in Sources */,
+				A5659F8C1D4BF44D00E554FF /* SessionManager.swift in Sources */,
+				A5AA67CD1D95E86B00381414 /* RegisterUserModel.swift in Sources */,
+				A5BF84DD1D9204E5009F9408 /* Token.swift in Sources */,
+				A5BF84E51D921CAC009F9408 /* DividendType.swift in Sources */,
+				A5156EF41D24B37200D0C8C6 /* CompaniesViewController.swift in Sources */,
+				A56938CB1DB434D9001B5D2B /* FavoritesService.swift in Sources */,
+				A5BF84DB1D920126009F9408 /* DividendService.swift in Sources */,
+				A51736321D4D00CE00045D73 /* CompanyViewController.swift in Sources */,
+				A5AA67C91D95D98A00381414 /* CompanyService.swift in Sources */,
+				A5830A821DA31CEE006BDB72 /* DividendDetailViewController.swift in Sources */,
+				A52E12151D908CAE003D775F /* PusharpService.swift in Sources */,
+				A5DDF1001DAE971F00F67442 /* InAppPurchasesHelper.swift in Sources */,
+				A52E120B1D908B85003D775F /* AlamofireExtensions.swift in Sources */,
+				A58C8A471D4A36E900282A91 /* AccountViewController.swift in Sources */,
+				A5BF84D91D91FCCB009F9408 /* Dividend.swift in Sources */,
+				A5AA67CB1D95D9D300381414 /* Company.swift in Sources */,
+				A5C45A571E214AF2006E29D5 /* TabBarController.swift in Sources */,
+				A578CE951D22FD940020A2D4 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A578CE981D22FD940020A2D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A578CE991D22FD940020A2D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A578CE9D1D22FD940020A2D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A578CE9E1D22FD940020A2D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A578CEA11D22FD940020A2D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A578CEA21D22FD940020A2D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A578CEA41D22FD940020A2D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B120902179E388CFDDA4DE1 /* Pods-Dividendos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Dividendos/Dividendos.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development IOS Push Services: com.alliston.dividendos";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DLA5J5JEZ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Dividendos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alliston.dividendos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dividendos/Dividendos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A578CEA51D22FD940020A2D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC5811DE0290BA2FAE277A9 /* Pods-Dividendos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Dividendos/Dividendos.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DLA5J5JEZ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Dividendos/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alliston.dividendos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dividendos/Dividendos-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A578CE8A1D22FD930020A2D4 /* Build configuration list for PBXProject "Dividendos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A578CEA11D22FD940020A2D4 /* Debug */,
+				A578CEA21D22FD940020A2D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A578CEA31D22FD940020A2D4 /* Build configuration list for PBXNativeTarget "Dividendos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A578CEA41D22FD940020A2D4 /* Debug */,
+				A578CEA51D22FD940020A2D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A578CE871D22FD930020A2D4 /* Project object */;
+}
